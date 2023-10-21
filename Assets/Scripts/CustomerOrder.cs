@@ -38,10 +38,9 @@ public class CustomerOrder : MonoBehaviour
         customerOrder.Add(SelectRandomSagoFlavour());
     }
 
-    // Update is called once per frame
-    void Update()
+    public Components GetCustomerCupChoice()
     {
-        
+        return customerOrder[0];
     }
 
     #region Randdom Function

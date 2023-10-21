@@ -29,16 +29,20 @@ public class Player : MonoBehaviour
             if (hit.collider == null)
                 return;
 
+            // If collider hits taho component
+            if (hit.collider.GetComponent<TahoComponents>() == null)
+                return;
+
             TahoComponents tahoComponent = hit.collider.GetComponent<TahoComponents>();
 
-            // If collider hits taho component
-            if (tahoComponent == null)
+            if (currentCustomerOrder == null || tries == 0)
                 return;
 
             // Check if order is correct
             if (currentCustomerOrder.ComponentMatches(tahoComponent.Component))
             {
                 tahoComponent.AddComponentToOrder();
+                tahoComponent.SetOrderSprite();
                 currentCustomerOrder.NextComponent();
             }
             else
@@ -48,7 +52,6 @@ public class Player : MonoBehaviour
 
                 if (tries <= 0)
                 {
-                    tries = 2;
                     GameManager.instance.CallNextCustomer();
                 }
                 else
@@ -57,5 +60,10 @@ public class Player : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ReplenishTries()
+    {
+        tries = 2;
     }
 }

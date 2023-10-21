@@ -17,13 +17,13 @@ public enum Components
 public class TahoComponents : MonoBehaviour
 {
     [SerializeField] private string componentName;
-    [SerializeField] private Sprite componentSprite;
     [SerializeField] private Components component;
 
     public string ComponentName { get { return componentName; } }
-    public Sprite ComponentSprite { get { return componentSprite; } }
 
     public Components Component { get { return component; } set { component = value; } }
+
+    public virtual void SetOrderSprite() {  }
 
     public void AddComponentToOrder()
     {

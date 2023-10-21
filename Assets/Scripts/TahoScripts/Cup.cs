@@ -9,7 +9,10 @@ public enum CupSize
 
 public class Cup : TahoComponents
 {
-    //[SerializeField] private CupSize cupSize;
+    [SerializeField] private Sprite componentSprite;
 
-    //public CupSize CupSize {get { return cupSize; } }
+    public override void SetOrderSprite()
+    {
+        GameManager.instance.Order.GetComponent<SpriteRenderer>().sprite = componentSprite;
+    }
 }
