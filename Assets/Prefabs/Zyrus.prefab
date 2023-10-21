@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 8332982077916803894}
   - component: {fileID: 8332982077916803893}
   - component: {fileID: 2921510325398966369}
+  - component: {fileID: 1725081427}
   m_Layer: 0
   m_Name: Zyrus
   m_TagString: Untagged
@@ -92,7 +93,7 @@ MonoBehaviour:
   - {fileID: -540158932, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - {fileID: 995925291, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   cupSizePreference: 01000000
-  sagoFlavourPreference: 03000000
+  sagoFlavourPreference: 06000000
   syrupFlavourPreference: 03000000
   taho: 2
 --- !u!212 &2921510325398966369
@@ -147,3 +148,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1725081427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332982077916803892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4a141020e59a949a9b9df52e781e8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
+  textWriter: {fileID: 0}
+  openingDialogueDay1:
+  - actorId: 0
+    message: Day 1
+  - actorId: 1
+    message: ' taho 1'
+  - actorId: 2
+    message: thot 1
+  openingDialogueDay2:
+  - actorId: 0
+    message: day 2
+  endingDialogueDay1:
+  - actorId: 0
+    message: bye 1
+  endingDialogueDay2:
+  - actorId: 0
+    message: bye 2

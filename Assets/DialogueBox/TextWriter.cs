@@ -4,20 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-[System.Serializable]
 public class TextWriter : MonoBehaviour
 {
-    [SerializeField] private string[] characterDialogue;
     [SerializeField] private float timePerCharacter;
     [SerializeField] private int textID = 0;
+    [SerializeField] private Sprite[] textBoxSprites;
     private TextMeshProUGUI characterTextBox;
+    private Dialogue[] currentDialogue;
+    private Image textBoxBG;
 
     // Start is called before the first frame update
     void Start()
     {
+        textBoxBG = GameObject.Find("BG").GetComponent<Image>();
+
         characterTextBox = GetComponentInChildren<TextMeshProUGUI>();
         characterTextBox.maxVisibleCharacters = 0;
-        StartCoroutine(typeText(characterDialogue[textID], timePerCharacter));
+
+        StartCoroutine(typeText(currentDialogue[textID].message, timePerCharacter));
     }
 
     // Update is called once per frame
@@ -25,13 +29,20 @@ public class TextWriter : MonoBehaviour
     {
 
     }
+
+    public void SetDialogue (Dialogue[] dialogueToDisplay)
+    {
+        currentDialogue = dialogueToDisplay;
+    }
+
     public void ProgressDialogue()
     {
-        if (textID < characterDialogue.Length - 1)
+        if (textID < currentDialogue.Length - 1)
         {
             characterTextBox.maxVisibleCharacters = 0;
             textID++;
-            StartCoroutine(typeText(characterDialogue[textID], timePerCharacter));
+            textBoxBG.sprite = textBoxSprites[currentDialogue[textID].actorId];
+            StartCoroutine(typeText(currentDialogue[textID].message, timePerCharacter));
         }
 
         else

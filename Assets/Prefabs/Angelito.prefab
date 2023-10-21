@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1616907343448329719}
   - component: {fileID: 1616907343448329716}
   - component: {fileID: 5575334897411862176}
+  - component: {fileID: -2122528325647446594}
   m_Layer: 0
   m_Name: Angelito
   m_TagString: Untagged
@@ -116,6 +117,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2122528325647446594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616907343448329717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4a141020e59a949a9b9df52e781e8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
+  textWriter: {fileID: 0}
+  openingDialogueDay1: []
+  openingDialogueDay2: []
+  endingDialogueDay1: []
+  endingDialogueDay2: []
 --- !u!1 &6563156380999696931
 GameObject:
   m_ObjectHideFlags: 0
