@@ -154,10 +154,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 4976011642653031491, guid: 42df383b294add34ba4b6295eb3203b3, type: 3}
   Player: {fileID: 0}
-  customerPrefab: {fileID: 8332982077916803892, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+  customerPrefab:
+  - {fileID: 1616907343448329717, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
+  - {fileID: 8332982077916803892, guid: 38a4e0e9ae038a440a80e7fac77db663, type: 3}
+  - {fileID: 8332982077916803892, guid: 31d4e5065c3687647a78a5f22c64708b, type: 3}
+  - {fileID: 8332982077916803892, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
   Customer: {fileID: 0}
+  orderPrefab: {fileID: 655841554596584417, guid: 1bcff70de56eb9b46ac1f1ff75904005, type: 3}
+  Order: {fileID: 0}
   clockPrefab: {fileID: 1571495803406728006, guid: 08c3a1ae8125dd843a239c8edd5135a4, type: 3}
-  customerToServe: 15
+  customerToServe: 5
+  maxDays: 0
+  TotalDays:
+  - Customers:
+    - {fileID: 8332982077916803892, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+    - {fileID: 8332982077916803892, guid: 31d4e5065c3687647a78a5f22c64708b, type: 3}
+    - {fileID: 8332982077916803892, guid: 38a4e0e9ae038a440a80e7fac77db663, type: 3}
+    - {fileID: 1616907343448329717, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
+  - Customers:
+    - {fileID: 8332982077916803892, guid: 38a4e0e9ae038a440a80e7fac77db663, type: 3}
+    - {fileID: 8332982077916803892, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+    - {fileID: 8332982077916803892, guid: 31d4e5065c3687647a78a5f22c64708b, type: 3}
+    - {fileID: 1616907343448329717, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
 --- !u!4 &145075924
 Transform:
   m_ObjectHideFlags: 0
@@ -221,10 +239,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 1603684207}
   soundEffects: {fileID: 566774390}
-  backgroundMusicList:
-  - {fileID: 8300000, guid: 86401e70c61d81e4db3ee6fc9d523135, type: 3}
-  - {fileID: 8300000, guid: ffd589179cf67784ca5a027d6d778584, type: 3}
-  - {fileID: 8300000, guid: f9caa642d4ae4a84588688973bc46630, type: 3}
 --- !u!1 &566774389
 GameObject:
   m_ObjectHideFlags: 0

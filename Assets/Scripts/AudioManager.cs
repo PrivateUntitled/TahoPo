@@ -74,4 +74,9 @@ public class AudioManager : Singleton<AudioManager>
     {
         backgroundMusic.Stop();
     }
+
+    public void PlaySFX(sfxenum audio)
+    {
+        soundEffects.PlayOneShot(sfxMusicList[(int)audio]);
+    }
 }
