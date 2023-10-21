@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 8332982077916803893}
   - component: {fileID: 2921510325398966369}
   m_Layer: 0
-  m_Name: RandomCustomer
+  m_Name: Zyrus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,16 +77,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2795688fc80e3154fa8a072d275f6ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSprites:
-  - {fileID: -470202583, guid: abff1832077c7e943bcc69e69663d188, type: 3}
-  - {fileID: -1058323108, guid: abff1832077c7e943bcc69e69663d188, type: 3}
-  - {fileID: 1991864613, guid: abff1832077c7e943bcc69e69663d188, type: 3}
-  - {fileID: -1642416625, guid: abff1832077c7e943bcc69e69663d188, type: 3}
-  - {fileID: -1376179288, guid: abff1832077c7e943bcc69e69663d188, type: 3}
-  - {fileID: 1587983374, guid: abff1832077c7e943bcc69e69663d188, type: 3}
-  cupSizePreference: 0000000001000000
-  sagoFlavourPreference: 070000000600000008000000
-  syrupFlavourPreference: 030000000400000005000000
+  CharacterSmilesSprites:
+  - {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
+  - {fileID: -1309054542, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
+  - {fileID: -447106194, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
+  - {fileID: -400147601, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
+  - {fileID: -311755803, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
+  - {fileID: -1994143554, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
+  CharacterGrinSprites:
+  - {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
+  - {fileID: -964409970, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
+  - {fileID: -1477955977, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
+  - {fileID: -1591175579, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
+  - {fileID: -540158932, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
+  - {fileID: 995925291, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
+  cupSizePreference: 01000000
+  sagoFlavourPreference: 03000000
+  syrupFlavourPreference: 03000000
   taho: 2
 --- !u!212 &2921510325398966369
 SpriteRenderer:
@@ -129,7 +136,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -470202583, guid: abff1832077c7e943bcc69e69663d188, type: 3}
+  m_Sprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

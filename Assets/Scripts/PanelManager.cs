@@ -46,4 +46,54 @@ public class PanelManager : MonoBehaviour
         AudioManager.instance.BackgroundMusic.volume = backgroundMusicSlider.value;
         AudioManager.instance.SoundEffects.volume = soundEffectSlider.value;
     }
+
+    void Update()
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+        RaycastHit2D hit = Physics2D.Raycast(mousePos2D, -Vector2.up);
+
+        // If collider hits something
+        if (hit.collider == null)
+            return;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Buttons _button = hit.collider.gameObject.GetComponent<Buttons>();
+
+            if (!_button)
+                return;
+
+            if (!_button.IsHovered)
+                return;
+
+            Debug.Log(_button.ButtonType);
+
+            switch (_button.ButtonType)
+            {
+                case ButtonType.PLAY:
+                    _button.UnHover();
+                    StartGame();
+                    break;
+                case ButtonType.SETTINGS:
+                    _button.UnHover();
+                    OpenSettings();
+                    break;
+                case ButtonType.QUIT:
+                    _button.UnHover();
+                    QuitGame();
+                    break;
+                case ButtonType.APPLY:
+                    _button.UnHover();
+                    ApplySettings();
+                    break;
+                case ButtonType.BACK:
+                    _button.UnHover();
+                    BackToMainMenu();
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
 }
