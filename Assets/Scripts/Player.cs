@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField, Min(1)] private int tries;
     private CustomerOrder currentCustomerOrder;
 
+    public int Tries { get { return tries; } }
     public CustomerOrder CurrentCustomerOrder { set { currentCustomerOrder = value; } }
 
     // Start is called before the first frame update
@@ -49,6 +50,10 @@ public class Player : MonoBehaviour
                 {
                     tries = 2;
                     GameManager.instance.CallNextCustomer();
+                }
+                else
+                {
+                    GameManager.instance.Customer.GetComponent<CustomerOrder>().SetPlayerSprite();
                 }
             }
         }

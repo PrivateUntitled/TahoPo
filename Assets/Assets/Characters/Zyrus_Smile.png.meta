@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: abff1832077c7e943bcc69e69663d188
+guid: 1c2a4fa78c203264ab53480ff4e7fa1b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Coco-Sheet_0
+      name: Zyrus_Smile_0
       rect:
         serializedVersion: 2
         x: 8
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb5ba5300dc703499f122e817e72a93
-      internalID: -470202583
+      spriteID: fa0ece357d1dd3c4390183643972ab09
+      internalID: -897105064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coco-Sheet_1
+      name: Zyrus_Smile_1
       rect:
         serializedVersion: 2
         x: 180
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d78e6afd32b562439bbbfb18ddff81e
-      internalID: -1058323108
+      spriteID: 881c1b1329a87e9428f16c752444dd17
+      internalID: -1309054542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coco-Sheet_2
+      name: Zyrus_Smile_2
       rect:
         serializedVersion: 2
         x: 352
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b15daaad37ed514ba21a143f7e9b747
-      internalID: 1991864613
+      spriteID: d6549400827d6ba4bae7790b0aa2563f
+      internalID: -447106194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coco-Sheet_3
+      name: Zyrus_Smile_3
       rect:
         serializedVersion: 2
         x: 524
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6dc1675a3927af4482fc99c2c210b9f
-      internalID: -1642416625
+      spriteID: e8cc173b1d25a3f45ba94f3395d3bfa5
+      internalID: -400147601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coco-Sheet_4
+      name: Zyrus_Smile_4
       rect:
         serializedVersion: 2
         x: 696
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaa51aa910704844e91200cc9546e7e4
-      internalID: -1376179288
+      spriteID: 1283729421af7174d9ba242b3b303ae9
+      internalID: -311755803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Coco-Sheet_5
+      name: Zyrus_Smile_5
       rect:
         serializedVersion: 2
         x: 868
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41989fde23938384994295d65702bb93
-      internalID: 1587983374
+      spriteID: 65a8824d902c8ac4fa938c6aac7c7f08
+      internalID: -1994143554
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Coco-Sheet_0: -470202583
-      Coco-Sheet_1: -1058323108
-      Coco-Sheet_2: 1991864613
-      Coco-Sheet_3: -1642416625
-      Coco-Sheet_4: -1376179288
-      Coco-Sheet_5: 1587983374
+      Zyrus_Smile_0: -897105064
+      Zyrus_Smile_1: -1309054542
+      Zyrus_Smile_2: -447106194
+      Zyrus_Smile_3: -400147601
+      Zyrus_Smile_4: -311755803
+      Zyrus_Smile_5: -1994143554
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

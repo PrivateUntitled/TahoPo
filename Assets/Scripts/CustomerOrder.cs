@@ -5,7 +5,8 @@ using UnityEngine;
 public class CustomerOrder : MonoBehaviour
 {
     [Header("Customer Info")]
-    [SerializeField] Sprite[] CharacterSprites;
+    [SerializeField] Sprite[] CharacterSmilesSprites;
+    [SerializeField] Sprite[] CharacterGrinSprites;
     private SpriteRenderer spriteRenderer;
 
     [Header("Order")]
@@ -28,13 +29,13 @@ public class CustomerOrder : MonoBehaviour
         orderIndex = 0;
         GameManager.instance.Player.GetComponent<Player>().CurrentCustomerOrder = GetComponent<CustomerOrder>();
 
-        spriteRenderer.sprite = CharacterSprites[orderIndex];
+        SetPlayerSprite();
 
         //Selecting Random Orders
         customerOrder.Add(SelectRandomCup());
         customerOrder.Add(taho);
-        customerOrder.Add(SelectRandomSagoFlavour());
         customerOrder.Add(SelectRandomSyrupFlavour());
+        customerOrder.Add(SelectRandomSagoFlavour());
     }
 
     // Update is called once per frame
@@ -76,7 +77,22 @@ public class CustomerOrder : MonoBehaviour
         }
         else
         {
-            spriteRenderer.sprite = CharacterSprites[orderIndex];
+            SetPlayerSprite();
+        }
+    }
+
+    public void SetPlayerSprite()
+    {
+        switch(GameManager.instance.Player.GetComponent<Player>().Tries)
+        {
+            case 2:
+                spriteRenderer.sprite = CharacterSmilesSprites[orderIndex];
+                break;
+            case 1:
+                spriteRenderer.sprite = CharacterGrinSprites[orderIndex];
+                break;
+            default:
+                break;
         }
     }
 }
