@@ -13,11 +13,13 @@ public class PanelManager : MonoBehaviour
 
     public void StartGame()
     {
+        AudioManager.instance.PlaySFX(sfxenum.sfx_buttonClick1);
         GameManager.instance.LoadMainGame();
     }
 
     public void OpenSettings()
     {
+        AudioManager.instance.PlaySFX(sfxenum.sfx_buttonClick1);
         mainMenu.SetActive(false);
         settingMenu.SetActive(true);
 
@@ -27,6 +29,7 @@ public class PanelManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        AudioManager.instance.PlaySFX(sfxenum.sfx_buttonClick1);
         mainMenu.SetActive(true);
         settingMenu.SetActive(false);
     }
@@ -43,6 +46,7 @@ public class PanelManager : MonoBehaviour
 
     public void ApplySettings()
     {
+        AudioManager.instance.PlaySFX(sfxenum.sfx_buttonClick1);
         AudioManager.instance.BackgroundMusic.volume = backgroundMusicSlider.value;
         AudioManager.instance.SoundEffects.volume = soundEffectSlider.value;
     }
@@ -66,8 +70,6 @@ public class PanelManager : MonoBehaviour
 
             if (!_button.IsHovered)
                 return;
-
-            Debug.Log(_button.ButtonType);
 
             switch (_button.ButtonType)
             {

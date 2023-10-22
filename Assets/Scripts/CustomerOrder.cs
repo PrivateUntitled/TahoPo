@@ -68,15 +68,17 @@ public class CustomerOrder : MonoBehaviour
     public void NextComponent()
     {
         orderIndex++;
-        
+
         if (orderIndex >= customerOrder.Count)
         {
             Debug.Log("Order Done");
             GameManager.instance.CallNextCustomer();
+            AudioManager.instance.PlaySFX(sfxenum.sfx_customerSuccessful1);
         }
         else
         {
             SetPlayerSprite();
+            AudioManager.instance.PlaySFX(sfxenum.sfx_guessCorrect);
         }
     }
 

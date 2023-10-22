@@ -13,6 +13,7 @@ public class Cup : TahoComponents
 
     public override void SetOrderSprite()
     {
+        AudioManager.instance.PlayRandomSFX(new List<sfxenum> { sfxenum.sfx_plasticCrinkle1, sfxenum.sfx_plasticCrinkle2 });
         GameManager.instance.Order.GetComponent<SpriteRenderer>().sprite = componentSprite;
     }
 }

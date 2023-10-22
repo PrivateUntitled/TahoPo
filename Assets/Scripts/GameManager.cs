@@ -21,6 +21,11 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private GameObject clockPrefab;
     private GameObject clock;
 
+    // Background
+    [SerializeField] private Sprite[] backgroundSprites;
+    [SerializeField] private GameObject backgroundPrefab;
+    private GameObject background;
+
     // Customer Count
     private int customerCount;
     [SerializeField] private int customerToServe;
@@ -28,7 +33,8 @@ public class GameManager : Singleton<GameManager>
 
     // Days
     [SerializeField, Min(1)] private int maxDays;
-    private int currentDay = 1;
+    private int currentDay;
+    public int CurrentDay { get { return currentDay; } }
 
     [SerializeField] private CustomerListPerDay[] TotalDays;
 
@@ -37,16 +43,23 @@ public class GameManager : Singleton<GameManager>
         StartCoroutine(LoadMainMenuScene());
     }
 
-    public void StartGame()
+    public void StartNewGame()
     {
         currentDay = 0;
         maxDays = TotalDays.Length;
 
+        AudioManager.instance.StopBackgroundMusicSound();
+        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_SomethingToLookForwardTo_final);
+
+        StartCoroutine(PlayAmbience());
+
+        StartGame();
+    }
+
+    public void StartGame()
+    {
         customerCount = 0;
         customerToServe = TotalDays[currentDay].Customers.Count;
-
-        AudioManager.instance.StopBackgroundMusicSound();
-        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_SomethingToLookForwardTo_drft1);
 
         // Spawn Player
         Player = Instantiate(playerPrefab, new Vector2(0, 0), Quaternion.identity);
@@ -60,6 +73,9 @@ public class GameManager : Singleton<GameManager>
         Order = Instantiate(orderPrefab, orderPrefab.transform.position, Quaternion.identity);
         SceneManager.MoveGameObjectToScene(Order, SceneManager.GetSceneByName("MainGame"));
 
+        background = Instantiate(backgroundPrefab, backgroundPrefab.transform.position, Quaternion.identity);
+        SceneManager.MoveGameObjectToScene(background, SceneManager.GetSceneByName("MainGame"));
+
         StartCoroutine(TransitiontoNextCustomer());
     }
 
@@ -70,7 +86,17 @@ public class GameManager : Singleton<GameManager>
         Destroy(clock);
         Destroy(Order);
 
-        StartGame();
+        Debug.Log("Current Day: " + currentDay + "Max Days" + maxDays);
+
+        if (maxDays <= currentDay)
+        {
+            // Piece it together
+            EndingScene();
+        }
+        else
+        {
+            StartGame();
+        }
     }
 
     public void CallNextCustomer()
@@ -91,20 +117,15 @@ public class GameManager : Singleton<GameManager>
             Order.GetComponent<SpriteRenderer>().sprite = null;
         }
 
+        SetBackground();
+
         // If All Customers of the Day are Served
         if (customerCount >= customerToServe)
         {
             Debug.Log("Served All Customer");
             // Do Chismis
 
-            if (maxDays <= currentDay)
-            {
-                // Piece it together
-            }
-            else
-            {
-                StartNewDay();
-            }
+            StartNewDay();
         }
         else
         {
@@ -118,15 +139,16 @@ public class GameManager : Singleton<GameManager>
 
         int tahoScream = Random.Range(0, 2);
 
-        // Random Jason Taho is Speaking
-        switch(tahoScream)
+        //AudioManager.instance.PlayRandomSFX(new List<sfxenum> { sfxenum.Male1_Taho1, sfxenum.Male1_Taho2 });
+
+        // Start Tutorial
+        if (currentDay == 0 && customerCount == 0)
         {
-            case 0:
-                AudioManager.instance.PlaySFX(sfxenum.Male1_Taho1);
-                break;
-            case 1:
-                AudioManager.instance.PlaySFX(sfxenum.Male1_Taho2);
-                break;
+            Player.GetComponent<Player>().InfiniteTries = true;
+        }
+        else
+        {
+            Player.GetComponent<Player>().InfiniteTries = false;
         }
 
         //Get Random Character - Archived
@@ -146,7 +168,7 @@ public class GameManager : Singleton<GameManager>
         StartCoroutine(LoadMainGameScene());
     }
 
-    IEnumerator LoadMainMenuScene()
+    public IEnumerator LoadMainMenuScene()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
 
@@ -156,7 +178,23 @@ public class GameManager : Singleton<GameManager>
             yield return null;
         }
 
-        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_GentleWarmth);
+        AudioManager.instance.StopBackgroundMusicSound();
+        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_GentleWarmth_final);
+    }
+
+    public IEnumerator LoadMainMenuScene2()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        SceneManager.UnloadSceneAsync("EndingScene");
+        AudioManager.instance.StopBackgroundMusicSound();
+        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_GentleWarmth_final);
     }
 
     IEnumerator LoadMainGameScene()
@@ -169,9 +207,58 @@ public class GameManager : Singleton<GameManager>
             yield return null;
         }
 
-        StartGame();
+        StartNewGame();
+    }
+
+    void EndingScene()
+    {
+        SceneManager.UnloadSceneAsync("MainGame");
+        StopAllCoroutines();
+        StartCoroutine(LoadEndingScene());
+    }
+
+    IEnumerator LoadEndingScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("EndingScene", LoadSceneMode.Additive);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        AudioManager.instance.StopBackgroundMusicSound();
+        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_BerryFlavored_final);
     }
     #endregion
+
+    IEnumerator PlayAmbience()
+    {
+        while(true)
+        {
+            AudioManager.instance.PlayAmbience(new List<sfxenum> { sfxenum.sfx_birds1, sfxenum.sfx_birds2, sfxenum.sfx_birds3, sfxenum.sfx_birds4, 
+                                                                   sfxenum.sfx_leaves1, sfxenum.sfx_leaves2, sfxenum.sfx_leaves3, sfxenum.sfx_leaves4,
+                                                                   sfxenum.sfx_longAmbience_windAndLeaves});
+
+            yield return new WaitForSeconds(Random.Range(10, 20));
+        }
+    }
+
+    public void SetBackground()
+    {
+        if (customerCount == 0)
+        {
+            background.GetComponent<SpriteRenderer>().sprite = backgroundSprites[0];
+        }
+        else if (customerCount == CustomerToServe - 1)
+        {
+            background.GetComponent<SpriteRenderer>().sprite = backgroundSprites[2];
+        }
+        else
+        {
+            background.GetComponent<SpriteRenderer>().sprite = backgroundSprites[1];
+        }
+    }
 
     [System.Serializable]
     public struct CustomerListPerDay

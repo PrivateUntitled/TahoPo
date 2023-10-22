@@ -4,13 +4,30 @@ using UnityEngine;
 
 public enum bgmenum
 {
-    GJP23_BerryFlavored_draft1,
-    GJP23_GentleWarmth,
-    GJP23_SomethingToLookForwardTo_drft1,
+    GJP23_BerryFlavored_final,
+    GJP23_GentleWarmth_final,
+    GJP23_SlowAndSteady,
+    GJP23_SomethingToLookForwardTo_final,
 }
 
 public enum sfxenum
 {
+    child1_a_what_now_cursed,
+    child1_ee_yup_cursed,
+    child1_huh_cursed,
+    child1_i_totally_get_it_cursed,
+    child1_nuh_uh_cursed,
+    child1_oh_my_cursed,
+    female1_heeeey_beckon,
+    female1_hey,
+    female1_hm_thinking,
+    female1_huh,
+    female1_huh_dead,
+    female1_I_understand_cheerful,
+    female1_mm_hm_cheerful,
+    female1_mm_hm_cheerful_01,
+    female1_oh_questioning,
+    female1_whats_up,
     Male1_AllGood,
     Male1_Alright,
     Male1_Damn_defeated,
@@ -32,13 +49,46 @@ public enum sfxenum
     Male1_WHATDOYOUMEAN_angry,
     Male1_WhatDoYouMean_question,
     Male1_WhatsUp,
-    Male1_YouKnowWhatImSaying_question
+    Male1_YouKnowWhatImSaying_question,
+    sfx_birds1,
+    sfx_birds2,
+    sfx_birds3,
+    sfx_birds4,
+    sfx_bottleliquidPour1,
+    sfx_bottleliquidPour2,
+    sfx_buttonClick1,
+    sfx_customerLeaves1,
+    sfx_customerLeaves2,
+    sfx_customerLeaves3,
+    sfx_customerLeaves4,
+    sfx_customerSuccessful1,
+    sfx_guessCorrect,
+    sfx_guessWrong,
+    sfx_leaves1,
+    sfx_leaves2,
+    sfx_leaves3,
+    sfx_leaves4,
+    sfx_longAmbience_windAndLeaves,
+    sfx_plasticCrinkle1,
+    sfx_plasticCrinkle2,
+    sfx_plasticCupFall,
+    sfx_pouringPearls,
+    sfx_scoopMetallic1,
+    sfx_scoopMetallic2,
+    sfx_scoopPlastic1,
+    sfx_taho1,
+    sfx_taho2,
+    TanodHmm,
+    TanodHmm2,
+    TanodHuh,
+    TanodHuh2
 }
 
 public class AudioManager : Singleton<AudioManager>
 {
     [SerializeField] private AudioSource backgroundMusic;
     [SerializeField] private AudioSource soundEffects;
+    [SerializeField] private AudioSource ambienceSource;
 
     private List<AudioClip> backgroundMusicList = new List<AudioClip>();
     private List<AudioClip> sfxMusicList = new List<AudioClip>();
@@ -70,6 +120,12 @@ public class AudioManager : Singleton<AudioManager>
         backgroundMusic.Play();
     }
 
+    public void PlayRandomSFX(List<sfxenum> sfxList)
+    {
+        sfxenum audio = sfxList[Random.Range(0, sfxList.Count)];
+        soundEffects.PlayOneShot(sfxMusicList[(int)audio]);
+    }
+
     public void StopBackgroundMusicSound()
     {
         backgroundMusic.Stop();
@@ -78,5 +134,11 @@ public class AudioManager : Singleton<AudioManager>
     public void PlaySFX(sfxenum audio)
     {
         soundEffects.PlayOneShot(sfxMusicList[(int)audio]);
+    }
+
+    public void PlayAmbience(List<sfxenum> sfxList)
+    {
+        sfxenum audio = sfxList[Random.Range(0, sfxList.Count)];
+        ambienceSource.PlayOneShot(sfxMusicList[(int)audio]);
     }
 }

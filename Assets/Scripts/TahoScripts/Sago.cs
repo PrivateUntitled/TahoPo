@@ -15,7 +15,8 @@ public class Sago : TahoComponents
 
     public override void SetOrderSprite()
     {
-        switch(GameManager.instance.Customer.GetComponent<CustomerOrder>().GetCustomerCupChoice())
+        AudioManager.instance.PlaySFX(sfxenum.sfx_pouringPearls);
+        switch (GameManager.instance.Customer.GetComponent<CustomerOrder>().GetCustomerCupChoice())
         {
             case Components.CUP_SMALL:
                 GameManager.instance.Order.GetComponent<SpriteRenderer>().sprite = componentSprite[0];

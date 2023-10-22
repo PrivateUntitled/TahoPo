@@ -8,6 +8,10 @@ public class Player : MonoBehaviour
     private CustomerOrder currentCustomerOrder;
 
     public int Tries { get { return tries; } }
+
+    private bool infiniteTries;
+    public bool InfiniteTries { set { infiniteTries = value; } }
+
     public CustomerOrder CurrentCustomerOrder { set { currentCustomerOrder = value; } }
 
     // Start is called before the first frame update
@@ -47,7 +51,11 @@ public class Player : MonoBehaviour
             }
             else
             {
-                tries--;
+                if(!infiniteTries)
+                    tries--;
+
+                AudioManager.instance.PlaySFX(sfxenum.sfx_guessWrong);
+
                 Debug.Log("Incorrect Order, Tries Left: " + tries);
 
                 if (tries <= 0)
