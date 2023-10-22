@@ -14,7 +14,11 @@ public class TsismisScene : MonoBehaviour
     [SerializeField] private string WrongAnswer;
     [SerializeField] private string NextDay;
 
+    int correct;
+
     [SerializeField] private TsismisQuestion[] tsismisQuestionaire;
+
+    [SerializeField] private GameObject[] fragments;
 
     private int questionNumber;
 
@@ -38,6 +42,8 @@ public class TsismisScene : MonoBehaviour
     private void Start()
     {
         questionNumber = GameManager.instance.CurrentDay;
+        correct = GameManager.instance.CurrentDay;
+        CheckFragment();
         ShowQuestion();
     }
 
@@ -48,6 +54,8 @@ public class TsismisScene : MonoBehaviour
 
     private IEnumerator typeQuestion(string textToDisplay)
     {
+        AudioManager.instance.PlayRandomSFX( new List<sfxenum> { sfxenum.Male1_Hm1, sfxenum.Male1_Hm2 } );
+
         questionText.maxVisibleCharacters = 0;
         questionText.text = textToDisplay;
 
@@ -81,11 +89,16 @@ public class TsismisScene : MonoBehaviour
         if(Options[answerbox].GetComponentInChildren<TextMeshProUGUI>().text == tsismisQuestionaire[questionNumber].correctAnswer)
         {
             Debug.Log("correct answer");
+            AudioManager.instance.PlaySFX(sfxenum.Male1_MakesSense);
+            correct++;
+            CheckFragment();
+            Debug.Log(questionNumber);
             StartCoroutine(typeRightText(tsismisQuestionaire[questionNumber].RightDialogue));
         }
         else
         {
             Debug.Log("Wrong answer");
+            AudioManager.instance.PlayRandomSFX(new List<sfxenum> { sfxenum.Male1_Huh1, sfxenum.Male1_Huh2 });
             StartCoroutine(typeWrongText(WrongAnswer));
         }
     }
@@ -125,12 +138,12 @@ public class TsismisScene : MonoBehaviour
             // next day
             StartCoroutine(typeNextDay(NextDay));
         }
-        if (questionNumber == 1)
+        else if (questionNumber == 1)
         {
             questionNumber = 2;
             ShowQuestion();
         }
-        if (questionNumber == 2)
+        else
         {
             GameManager.instance.StartNewDay();
         }
@@ -152,5 +165,13 @@ public class TsismisScene : MonoBehaviour
         StartCoroutine(GameManager.instance.GameToTsismis());
 
         // start next day
+    }
+
+    void CheckFragment()
+    {
+        for(int i = 0; i < correct; i++)
+        {
+            fragments[i].SetActive(true);
+        }
     }
 }

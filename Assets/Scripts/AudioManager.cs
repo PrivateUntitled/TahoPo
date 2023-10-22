@@ -95,6 +95,7 @@ public class AudioManager : Singleton<AudioManager>
 
     public AudioSource BackgroundMusic { get { return backgroundMusic; } set { backgroundMusic = value; } }
     public AudioSource SoundEffects { get { return soundEffects; } set { soundEffects = value; } }
+    public AudioSource AmbienceSource { get { return ambienceSource; } set { ambienceSource = value; } }
 
     // Start is called before the first frame update
     void Start()

@@ -48,9 +48,6 @@ public class GameManager : Singleton<GameManager>
         currentDay = 0;
         maxDays = TotalDays.Length;
 
-        AudioManager.instance.StopBackgroundMusicSound();
-        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_SomethingToLookForwardTo_final);
-
         StartCoroutine(PlayAmbience());
 
         StartGame();
@@ -58,6 +55,9 @@ public class GameManager : Singleton<GameManager>
 
     public void StartGame()
     {
+        AudioManager.instance.StopBackgroundMusicSound();
+        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_SomethingToLookForwardTo_final);
+
         customerCount = 0;
         customerToServe = TotalDays[currentDay].Customers.Count;
 

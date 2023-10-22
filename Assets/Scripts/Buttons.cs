@@ -17,7 +17,7 @@ public class Buttons : MonoBehaviour
     [SerializeField] private Sprite hoveredCup;
     [SerializeField] private Sprite unhoveredCup;
     [SerializeField] private ButtonType buttonType;
-    private Image spriteRenderer;
+    [SerializeField] private Image spriteRenderer;
 
     public ButtonType ButtonType { get { return buttonType; } }
 
@@ -27,7 +27,7 @@ public class Buttons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = this.gameObject.transform.parent.GetComponentInChildren<Image>();
+        //spriteRenderer = this.gameObject.transform.parent.GetComponentInChildren<Image>();
         isHovered = false;
     }
 
@@ -51,6 +51,7 @@ public class Buttons : MonoBehaviour
 
     public void UnHover() 
     {
+        isHovered = false;
         spriteRenderer.sprite = unhoveredCup;
     }
 }

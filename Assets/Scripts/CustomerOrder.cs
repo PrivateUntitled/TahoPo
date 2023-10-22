@@ -73,12 +73,11 @@ public class CustomerOrder : MonoBehaviour
         {
             Debug.Log("Order Done");
             GameManager.instance.Customer.GetComponent<DialogActivator>().AfterServeDialogue(GameManager.instance.CurrentDay);
-            
+            AudioManager.instance.PlaySFX(sfxenum.sfx_guessCorrect);
         }
         else
         {
             SetPlayerSprite();
-            AudioManager.instance.PlaySFX(sfxenum.sfx_guessCorrect);
         }
     }
 
