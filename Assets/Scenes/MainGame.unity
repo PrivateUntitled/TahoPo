@@ -247,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Syrup Ube
   component: 5
+  polyCollider: {fileID: 243597257}
   componentSprite:
   - {fileID: 21300000, guid: f079682986e0f5046bc5a8e8b45633bd, type: 3}
   - {fileID: 21300000, guid: 2cd605587ec72e0488423142b51e0e31, type: 3}
@@ -328,6 +329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Sago Normal
   component: 6
+  polyCollider: {fileID: 317929471}
   componentSprite:
   - {fileID: 21300000, guid: a0783f6331826f640a530940cc224f61, type: 3}
   - {fileID: 21300000, guid: ba45eb11da012564ab5db7d33595bba1, type: 3}
@@ -372,8 +374,8 @@ GameObject:
   m_Component:
   - component: {fileID: 355559349}
   - component: {fileID: 355559348}
-  - component: {fileID: 355559347}
   - component: {fileID: 355559350}
+  - component: {fileID: 355559351}
   m_Layer: 0
   m_Name: Normal_Cup
   m_TagString: Untagged
@@ -381,32 +383,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &355559347
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355559345}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0109683275}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.96}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32727504, y: 0.92687774}
-  m_EdgeRadius: 0
 --- !u!212 &355559348
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -488,7 +464,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Medium Cup
   component: 1
+  polyCollider: {fileID: 355559351}
   componentSprite: {fileID: 21300000, guid: daeb435d13753604fb4272ed6cb604a2, type: 3}
+--- !u!60 &355559351
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355559345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.96}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.14999999, y: 0.19}
+      - {x: 0.13, y: 0.45999998}
+      - {x: 0.089999996, y: 0.48}
+      - {x: -0.07, y: 0.48}
+      - {x: -0.12, y: 0.45999998}
+      - {x: -0.14, y: 0.29999998}
+      - {x: -0.16, y: 0.12}
+      - {x: -0.17999999, y: 0.03}
+      - {x: -0.17999999, y: -0.45}
+      - {x: -0.14999999, y: -0.48}
+      - {x: 0.14999999, y: -0.48}
+      - {x: 0.17999999, y: -0.45999998}
+      - {x: 0.17999999, y: 0.01}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Syrup Normal
   component: 3
+  polyCollider: {fileID: 677036871}
   componentSprite:
   - {fileID: 21300000, guid: 34ced8e7a26b4ca45a46c1c2a6de2512, type: 3}
   - {fileID: 21300000, guid: a8533ff59557793498df1c02a703f9d8, type: 3}
@@ -662,8 +678,8 @@ GameObject:
   m_Component:
   - component: {fileID: 869469319}
   - component: {fileID: 869469318}
-  - component: {fileID: 869469317}
   - component: {fileID: 869469320}
+  - component: {fileID: 869469321}
   m_Layer: 0
   m_Name: Small_Cup
   m_TagString: Untagged
@@ -671,32 +687,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &869469317
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 869469315}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0036560893, y: 0.007312298}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.96}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.3199628, y: 0.9415021}
-  m_EdgeRadius: 0
 --- !u!212 &869469318
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -778,7 +768,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Small Cup
   component: 0
+  polyCollider: {fileID: 869469321}
   componentSprite: {fileID: 21300000, guid: 8227f7eec4e339342be915ac221f9fcf, type: 3}
+--- !u!60 &869469321
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869469315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.96}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.17, y: 0.17}
+      - {x: 0.14999999, y: 0.29}
+      - {x: 0.13, y: 0.45999998}
+      - {x: 0.089999996, y: 0.48}
+      - {x: -0.07, y: 0.48}
+      - {x: -0.12, y: 0.45999998}
+      - {x: -0.14999999, y: 0.35}
+      - {x: -0.14999999, y: 0.29}
+      - {x: -0.16, y: 0.22999999}
+      - {x: -0.17999999, y: 0.13}
+      - {x: -0.17999999, y: -0.45}
+      - {x: -0.14999999, y: -0.48}
+      - {x: 0.14999999, y: -0.48}
+      - {x: 0.17999999, y: -0.45999998}
+      - {x: 0.17999999, y: 0.13}
 --- !u!1 &963609411
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Sago Strawberry
   component: 7
+  polyCollider: {fileID: 963609417}
   componentSprite:
   - {fileID: 21300000, guid: 8f4f0718c30911b4dbdfa54d2bc79313, type: 3}
   - {fileID: 21300000, guid: 74bb362d874d68d4ba12396565622fd4, type: 3}
@@ -1093,6 +1125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Syrup Strawberry
   component: 4
+  polyCollider: {fileID: 1116885131}
   componentSprite:
   - {fileID: 21300000, guid: d7e8dd2577d57b64fbc9109f60793f54, type: 3}
   - {fileID: 21300000, guid: e4f1fdc3ea37fd54a8bcda50d967d50c, type: 3}
@@ -1158,6 +1191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Sago Ube
   component: 8
+  polyCollider: {fileID: 1462349453}
   componentSprite:
   - {fileID: 21300000, guid: 194540083da2b5b49a4e7602974ebb03, type: 3}
   - {fileID: 21300000, guid: 5042aeca4011ab04c8fc537be8214ac4, type: 3}
@@ -1545,6 +1579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Taho
   component: 2
+  polyCollider: {fileID: 2014027028}
   componentSprite:
   - {fileID: 21300000, guid: 21786747bd405374bbef364f411d727f, type: 3}
   - {fileID: 21300000, guid: f6d7e42b3c8bb524fafd03e3a7c9ca68, type: 3}

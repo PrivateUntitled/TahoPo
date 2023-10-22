@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum ButtonType
 {
@@ -16,7 +17,7 @@ public class Buttons : MonoBehaviour
     [SerializeField] private Sprite hoveredCup;
     [SerializeField] private Sprite unhoveredCup;
     [SerializeField] private ButtonType buttonType;
-    private SpriteRenderer spriteRenderer;
+    private Image spriteRenderer;
 
     public ButtonType ButtonType { get { return buttonType; } }
 
@@ -26,7 +27,7 @@ public class Buttons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer = this.GetComponent<SpriteRenderer>();
+        spriteRenderer = this.gameObject.transform.parent.GetComponentInChildren<Image>();
         isHovered = false;
     }
 

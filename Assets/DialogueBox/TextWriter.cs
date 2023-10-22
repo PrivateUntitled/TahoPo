@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+public enum DialgoueTypes
+{
+    LEAVE, 
+    ENTER,
+    WRONG,
+    LEAVE_BAD
+}
+
 public class TextWriter : MonoBehaviour
 {
     [SerializeField] private float timePerCharacter;
@@ -12,6 +20,7 @@ public class TextWriter : MonoBehaviour
     private TextMeshProUGUI characterTextBox;
     private Dialogue[] currentDialogue;
     [SerializeField] private Image textBoxBG;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +31,8 @@ public class TextWriter : MonoBehaviour
         characterTextBox.maxVisibleCharacters = 0;
 
         StartCoroutine(typeText(currentDialogue[textID].message, timePerCharacter));
+
+        GameManager.instance.Player.GetComponent<Player>().isTalking = true;
     }
 
     // Update is called once per frame
@@ -47,6 +58,27 @@ public class TextWriter : MonoBehaviour
 
         else
         {
+            GameManager.instance.Player.GetComponent<Player>().isTalking = false;
+            switch (GameManager.instance.Customer.GetComponent<DialogActivator>().dialgoueTypes)
+            {
+                case DialgoueTypes.ENTER:
+
+                    break;
+
+                case DialgoueTypes.LEAVE_BAD:
+
+                    break;
+
+                case DialgoueTypes.WRONG:
+
+                    break;
+
+                case DialgoueTypes.LEAVE:
+                    GameManager.instance.CallNextCustomer();
+                    AudioManager.instance.PlaySFX(sfxenum.sfx_customerSuccessful1);
+                    break;
+            }
+
             Destroy(gameObject);
         }
     }

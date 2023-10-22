@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     public bool InfiniteTries { set { infiniteTries = value; } }
 
     public CustomerOrder CurrentCustomerOrder { set { currentCustomerOrder = value; } }
+    public bool collideWithTahoComponent;
+    public bool isTalking;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isTalking || !collideWithTahoComponent)
+            return;
+
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
