@@ -15,6 +15,7 @@ public class Syrup : TahoComponents
 
     public override void SetOrderSprite()
     {
+        AudioManager.instance.PlayRandomSFX(new List<sfxenum> { sfxenum.sfx_bottleliquidPour1, sfxenum.sfx_bottleliquidPour2 });
         switch (GameManager.instance.Customer.GetComponent<CustomerOrder>().GetCustomerCupChoice())
         {
             case Components.CUP_SMALL:

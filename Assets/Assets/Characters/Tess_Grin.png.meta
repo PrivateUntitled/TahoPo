@@ -108,9 +108,9 @@ TextureImporter:
       name: Tess_Grin_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 160
+        width: 172
         height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -129,9 +129,9 @@ TextureImporter:
       name: Tess_Grin_1
       rect:
         serializedVersion: 2
-        x: 180
+        x: 172
         y: 0
-        width: 160
+        width: 172
         height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,9 +150,9 @@ TextureImporter:
       name: Tess_Grin_2
       rect:
         serializedVersion: 2
-        x: 352
+        x: 344
         y: 0
-        width: 160
+        width: 172
         height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,9 +171,9 @@ TextureImporter:
       name: Tess_Grin_3
       rect:
         serializedVersion: 2
-        x: 521
+        x: 516
         y: 0
-        width: 163
+        width: 172
         height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,9 +192,9 @@ TextureImporter:
       name: Tess_Grin_4
       rect:
         serializedVersion: 2
-        x: 689
+        x: 688
         y: 0
-        width: 167
+        width: 172
         height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -213,9 +213,9 @@ TextureImporter:
       name: Tess_Grin_5
       rect:
         serializedVersion: 2
-        x: 861
+        x: 860
         y: 0
-        width: 167
+        width: 172
         height: 261
       alignment: 0
       pivot: {x: 0, y: 0}

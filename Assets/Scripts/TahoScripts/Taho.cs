@@ -8,6 +8,7 @@ public class Taho : TahoComponents
 
     public override void SetOrderSprite()
     {
+        AudioManager.instance.PlaySFX(sfxenum.sfx_scoopPlastic1);
         switch (GameManager.instance.Customer.GetComponent<CustomerOrder>().GetCustomerCupChoice())
         {
             case Components.CUP_SMALL:

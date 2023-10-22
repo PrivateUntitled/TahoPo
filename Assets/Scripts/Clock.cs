@@ -15,13 +15,10 @@ public class Clock : MonoBehaviour
     {
         rotationPerTurn = totalRotation / GameManager.instance.CustomerToServe;
         startingRotation = arrow.transform.eulerAngles.z;
-
-        Debug.Log(startingRotation);
     }
 
     public void RotateArrow(int currentCustomer)
     {
         arrow.transform.eulerAngles = new Vector3(0, 0, startingRotation - (rotationPerTurn * currentCustomer));
     }
-    
 }
