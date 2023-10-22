@@ -25,11 +25,11 @@ public class CustomerOrder : MonoBehaviour
         this.name = "Customer";
 
         spriteRenderer = this.GetComponent<SpriteRenderer>();
-        
+    
         orderIndex = 0;
         GameManager.instance.Player.GetComponent<Player>().CurrentCustomerOrder = GetComponent<CustomerOrder>();
 
-        SetPlayerSprite();
+        //SetPlayerSprite();
 
         //Selecting Random Orders
         customerOrder.Add(SelectRandomCup());
@@ -72,6 +72,7 @@ public class CustomerOrder : MonoBehaviour
         if (orderIndex >= customerOrder.Count)
         {
             Debug.Log("Order Done");
+            GameManager.instance.Customer.GetComponent<DialogActivator>().AfterServeDialogue(GameManager.instance.CurrentDay);
             GameManager.instance.CallNextCustomer();
             AudioManager.instance.PlaySFX(sfxenum.sfx_customerSuccessful1);
         }

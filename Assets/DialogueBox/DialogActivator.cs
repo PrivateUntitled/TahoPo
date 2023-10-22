@@ -14,7 +14,6 @@ public class DialogActivator : MonoBehaviour
 {
     [SerializeField] private GameObject dialogManagerPrefab;
     private GameObject dialogBox;
-    [SerializeField] private int currentDay = 1;
     [SerializeField] private TextWriter textWriter;
 
     [Header("Customer Dialogue Per Day")]
@@ -32,7 +31,7 @@ public class DialogActivator : MonoBehaviour
     void Start()
     {
         CreateTextBox();
-        BeforeServeDialogue(currentDay);
+        BeforeServeDialogue(GameManager.instance.CurrentDay);
     }
 
     // Update is called once per frame
@@ -50,15 +49,15 @@ public class DialogActivator : MonoBehaviour
 
     void BeforeServeDialogue(int dayCount)
     {
-        if (dayCount == 1) textWriter.SetDialogue(openingDialogueDay1);
-        else if (dayCount == 2) textWriter.SetDialogue(openingDialogueDay2);
+        if (dayCount == 0) textWriter.SetDialogue(openingDialogueDay1);
+        else if (dayCount == 1) textWriter.SetDialogue(openingDialogueDay2);
     }
 
     public void AfterServeDialogue(int dayCount)
     {
         CreateTextBox();
-        if (dayCount == 1) textWriter.SetDialogue(correctDialogueDay1);
-        else if (dayCount == 2) textWriter.SetDialogue(correctDialogueDay2);
+        if (dayCount == 0) textWriter.SetDialogue(correctDialogueDay1);
+        else if (dayCount == 1) textWriter.SetDialogue(correctDialogueDay2);
     }
 
     public void LeaveDialogue(int tryCount)
