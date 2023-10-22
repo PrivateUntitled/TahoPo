@@ -124,8 +124,7 @@ public class GameManager : Singleton<GameManager>
         {
             Debug.Log("Served All Customer");
             // Do Chismis
-
-            StartNewDay();
+            TsismisScene();
         }
         else
         {
@@ -212,7 +211,7 @@ public class GameManager : Singleton<GameManager>
 
     void EndingScene()
     {
-        SceneManager.UnloadSceneAsync("MainGame");
+        SceneManager.UnloadSceneAsync("TsismisScene");
         StopAllCoroutines();
         StartCoroutine(LoadEndingScene());
     }
@@ -229,6 +228,43 @@ public class GameManager : Singleton<GameManager>
 
         AudioManager.instance.StopBackgroundMusicSound();
         AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_BerryFlavored_final);
+    }
+
+    void TsismisScene()
+    {
+        SceneManager.UnloadSceneAsync("MainGame");
+        StopAllCoroutines();
+        StartCoroutine(LoadTsismisScene());
+    }
+
+    IEnumerator LoadTsismisScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("TsismisScene", LoadSceneMode.Additive);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        AudioManager.instance.StopBackgroundMusicSound();
+        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_BerryFlavored_final);
+    }
+
+    public IEnumerator GameToTsismis()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("MainGame", LoadSceneMode.Additive);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        AudioManager.instance.StopBackgroundMusicSound();
+        AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_BerryFlavored_final);
+        SceneManager.UnloadSceneAsync("TsismisScene");
+        StartNewDay();
     }
     #endregion
 
