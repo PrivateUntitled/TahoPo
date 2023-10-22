@@ -130,83 +130,153 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
-  currentDay: 1
   textWriter: {fileID: 0}
   openingDialogueDay1:
   - actorId: 0
     message: 'Kuya Marco! '
+    voiceLine: 2
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 1
     message: Angelito! My boy! How is everything?
+    voiceLine: 20
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: The adults are acting weird.. They keep asking me about what I want
+    voiceLine: 2
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: "I\u2019d love to get something that I could use to help Mom out\u2026 "
+    voiceLine: 2
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: Maybe if I got something I could use to go around I can help her with
       her chores!
+    voiceLine: 3
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 1
     message: "You\u2019re a good kid, Angelito. Tess would be proud if she knew what
       you were thinking!"
+    voiceLine: 21
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: But I gotta get my hands on some dessert right now!
+    voiceLine: 2
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: One small taho please!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: And please make it sweet!
+    voiceLine: 2
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 1
     message: "Coming up! I\u2019ll serve it to you Kuya Marco style!"
+    voiceLine: 17
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 2
     message: (One small taho, a sweet flavor)
+    voiceLine: 21
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   openingDialogueDay2:
   - actorId: 0
     message: Kuya Marco! Kuya Marco! Guess what!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 1
     message: "Angelito! What\u2019s up?"
+    voiceLine: 20
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: I had the best birthday yesterday
+    voiceLine: 5
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: I got so many presents! A bike, a toy robot, and money!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 1
     message: "Ey! That\u2019s great!"
+    voiceLine: 17
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 1
     message: Happy Belated Birthday, little man!
+    voiceLine: 21
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: Yeah! I got to see my dad too!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: "But he left halfway\u2026 work called him"
+    voiceLine: 2
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: "He barely comes home because he\u2019s so busy"
+    voiceLine: 2
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: "I get that he does it so that our neighborhood becomes better\u2026
       but I wish he would come home more"
+    voiceLine: 2
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
+  - actorId: 1
+    message: "I\u2019m sure you both want the same thing"
+    voiceLine: 21
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
-    message: Yeah
+    message: "Yeah\u2026"
+    voiceLine: 3
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: Well, I want dessert now so...
+    voiceLine: 2
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: One small taho please, kuya
+    voiceLine: 1
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   - actorId: 0
     message: I want it sweet!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 2
     message: (One small taho, a sweet flavor)
+    voiceLine: 21
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   correctDialogueDay1:
   - actorId: 0
     message: I love this!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: Thank you, Kuya Marco!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   correctDialogueDay2:
   - actorId: 0
     message: My favorite!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: "You\u2019re the best!"
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   - actorId: 0
     message: Thank you, Kuya Marco!
+    voiceLine: 1
+    characterSprite: {fileID: -1642318589, guid: 1397274352c978f498a52e1af4c57c3c, type: 3}
   wrongOrderDialogue:
   - actorId: 0
     message: "No, Kuya Marco! I don\u2019t like that flavor!"
+    voiceLine: 4
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
   walkOutDialogue:
   - actorId: 0
     message: Oh no! I have to hurry home, mom is waiting for me
+    voiceLine: 5
+    characterSprite: {fileID: 1714493754, guid: a9a63d3f7892632438f693fdfef96031, type: 3}
+  dialgoueTypes: 0
 --- !u!1 &6563156380999696931
 GameObject:
   m_ObjectHideFlags: 0

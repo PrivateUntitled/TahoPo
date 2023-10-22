@@ -161,70 +161,128 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
-  currentDay: 1
   textWriter: {fileID: 0}
   openingDialogueDay1:
   - actorId: 0
     message: Ah Marco!
+    voiceLine: 67
+    characterSprite: {fileID: 1713614421, guid: 71e6ac79c4243a547a8cdb36be022198, type: 3}
   - actorId: 1
     message: Boss! Kuya Antone! How are you doing?
+    voiceLine: 20
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: '*sigh* What should I do?'
+    voiceLine: 68
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: "I forgot it was their birthday today\u2026"
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: "I don\u2019t have time to buy a present"
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: Do you think money will do?
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 1
     message: I think anything you want to give them is fine, Kuya
+    voiceLine: 21
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: "I don\u2019t know them that well either since I\u2019m away all the
       time"
+    voiceLine: 68
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 1
     message: "Whatever you get, I\u2019m sure they\u2019ll be grateful!"
+    voiceLine: 21
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: "Well, there\u2019s nothing else I can do"
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: One Big taho please
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: I like it sweet!
+    voiceLine: 67
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 2
     message: (One big sized taho, a sweet flavor)
+    voiceLine: 21
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   openingDialogueDay2:
   - actorId: 1
     message: Ah Kuya Antone! Up early I see...
+    voiceLine: 20
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 1
     message: How are you doing?
+    voiceLine: 21
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: I screwed up Marco
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: I feel bad for missing the party
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 1
     message: Oh, why did you miss the party?
+    voiceLine: 24
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: Work called in the middle, so I had to leave
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: "I hope Angelito understands\u2026"
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: "I didn\u2019t mean to go"
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 1
     message: "I\u2019m sure he did understand... Don\u2019t worry about it, Kuya"
+    voiceLine: 16
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: "Anyways, I\u2019ll get one big taho"
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 0
     message: You know I like it sweet
+    voiceLine: 66
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   - actorId: 2
     message: (One big sized taho, a sweet flavor)
+    voiceLine: 21
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   correctDialogueDay1:
   - actorId: 0
     message: Thanks, I got to get back to work
+    voiceLine: 66
+    characterSprite: {fileID: 1713614421, guid: 71e6ac79c4243a547a8cdb36be022198, type: 3}
   correctDialogueDay2:
   - actorId: 0
     message: Thanks, I got to get back to work
+    voiceLine: 66
+    characterSprite: {fileID: 1713614421, guid: 71e6ac79c4243a547a8cdb36be022198, type: 3}
   wrongOrderDialogue:
   - actorId: 0
     message: "Marco, I don\u2019t like that flavor"
+    voiceLine: 68
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
   walkOutDialogue:
   - actorId: 0
     message: "Marco, I expected more\u2026 I expected better\u2026"
+    voiceLine: 68
+    characterSprite: {fileID: -1976576728, guid: 8d1bd4d704b3fcc4da70157d1f4ae437, type: 3}
+  dialgoueTypes: 0

@@ -8,6 +8,8 @@ public class Dialogue
 {
     public int actorId; // 0 - customer, 1 - taho man speech, 2 - taho man thot
     public string message;
+    public sfxenum voiceLine;
+    public Sprite characterSprite;
 }
 
 public class DialogActivator : MonoBehaviour
@@ -51,14 +53,22 @@ public class DialogActivator : MonoBehaviour
         dialogBox = Instantiate(dialogManagerPrefab, dialogManagerPrefab.transform.position, Quaternion.identity);
         textWriter = dialogBox.GetComponent<TextWriter>();
         SceneManager.MoveGameObjectToScene(dialogBox, SceneManager.GetSceneByName("MainGame"));
-        //SceneManager.MoveGameObjectToScene(dialogBox, SceneManager.GetSceneByName("Main Game"));
     }
 
     void BeforeServeDialogue(int dayCount)
     {
         dialgoueTypes = DialgoueTypes.ENTER;
-        if (dayCount == 0) textWriter.SetDialogue(openingDialogueDay1);
-        else if (dayCount == 1) textWriter.SetDialogue(openingDialogueDay2);
+        if (dayCount == 0) 
+        {
+            GameManager.instance.Customer.GetComponent<SpriteRenderer>().sprite = openingDialogueDay1[0].characterSprite;
+            textWriter.SetDialogue(openingDialogueDay1);
+        }
+
+        else if (dayCount == 1) 
+        {
+            GameManager.instance.Customer.GetComponent<SpriteRenderer>().sprite = openingDialogueDay2[0].characterSprite;
+            textWriter.SetDialogue(openingDialogueDay2);
+        }
     }
 
     public void AfterServeDialogue(int dayCount)
@@ -78,6 +88,7 @@ public class DialogActivator : MonoBehaviour
             dialgoueTypes = DialgoueTypes.WRONG;
             textWriter.SetDialogue(wrongOrderDialogue);
         }
+
         else
         {
             dialgoueTypes = DialgoueTypes.LEAVE_BAD;

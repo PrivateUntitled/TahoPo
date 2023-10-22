@@ -62,6 +62,7 @@ public class Player : MonoBehaviour
                 AudioManager.instance.PlaySFX(sfxenum.sfx_guessWrong);
 
                 Debug.Log("Incorrect Order, Tries Left: " + tries);
+                GameManager.instance.Customer.GetComponent<DialogActivator>().LeaveDialogue(tries);
 
                 if (tries <= 0)
                 {

@@ -170,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Syrup Ube
   component: 5
+  polyCollider: {fileID: 0}
   componentSprite:
   - {fileID: 0}
 --- !u!60 &243597257
@@ -277,6 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Sago Normal
   component: 6
+  polyCollider: {fileID: 0}
   componentSprite:
   - {fileID: 0}
 --- !u!60 &317929471
@@ -436,6 +438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Medium Cup
   component: 1
+  polyCollider: {fileID: 0}
   componentSprite: {fileID: 0}
 --- !u!1 &475411745
 GameObject:
@@ -636,6 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Syrup Normal
   component: 3
+  polyCollider: {fileID: 0}
   componentSprite:
   - {fileID: 0}
 --- !u!60 &677036871
@@ -761,7 +765,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &869469319
@@ -793,6 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Small Cup
   component: 0
+  polyCollider: {fileID: 0}
   componentSprite: {fileID: 0}
 --- !u!1 &963609411
 GameObject:
@@ -841,6 +846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Sago Strawberry
   component: 7
+  polyCollider: {fileID: 0}
   componentSprite:
   - {fileID: 0}
 --- !u!60 &963609417
@@ -875,63 +881,6 @@ PolygonCollider2D:
       - {x: -2.494827, y: 0.4449283}
       - {x: 1.118971, y: 0.47105217}
       - {x: 1.1629133, y: 1.0182765}
---- !u!1001 &1101981073
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1616907343448329717, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_Name
-      value: Angelito
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616907343448329719, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e09365a4b260ecb4392fe81ef23cc47a, type: 3}
 --- !u!1 &1113424129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Syrup Strawberry
   component: 4
+  polyCollider: {fileID: 0}
   componentSprite:
   - {fileID: 0}
 --- !u!60 &1116885131
@@ -1127,6 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Sago Ube
   component: 8
+  polyCollider: {fileID: 0}
   componentSprite:
   - {fileID: 0}
 --- !u!4 &1462349452
@@ -1297,6 +1248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentName: Taho
   component: 2
+  polyCollider: {fileID: 0}
   componentSprite:
   - {fileID: 0}
 --- !u!4 &2014027027
@@ -1356,3 +1308,60 @@ PolygonCollider2D:
       - {x: 0.44760123, y: -1.0268924}
       - {x: 0.5649656, y: -0.9245337}
       - {x: 0.6132212, y: -0.8350254}
+--- !u!1001 &2125989485
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8332982077916803892, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_Name
+      value: Zyrus
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}

@@ -33,6 +33,9 @@ public class TextWriter : MonoBehaviour
         StartCoroutine(typeText(currentDialogue[textID].message, timePerCharacter));
 
         GameManager.instance.Player.GetComponent<Player>().isTalking = true;
+        AudioManager.instance.PlaySFX(currentDialogue[textID].voiceLine);
+        GameManager.instance.Customer.GetComponent<SpriteRenderer>().sprite = currentDialogue[textID].characterSprite;
+
     }
 
     // Update is called once per frame
@@ -52,6 +55,9 @@ public class TextWriter : MonoBehaviour
         {
             characterTextBox.maxVisibleCharacters = 0;
             textID++;
+            AudioManager.instance.PlaySFX(currentDialogue[textID].voiceLine);
+            GameManager.instance.Customer.GetComponent<SpriteRenderer>().sprite = currentDialogue[textID].characterSprite;
+
             textBoxBG.sprite = textBoxSprites[currentDialogue[textID].actorId];
             StartCoroutine(typeText(currentDialogue[textID].message, timePerCharacter));
         }

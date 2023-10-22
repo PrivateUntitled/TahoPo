@@ -161,101 +161,181 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
-  currentDay: 1
   textWriter: {fileID: 0}
   openingDialogueDay1:
   - actorId: 0
     message: Eyyy Pare! You finally started selling taho
+    voiceLine: 36
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 1
     message: Zyrus, pare! Nice to see you!
+    voiceLine: 20
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: "Can I get it for free since I\u2019m your first customer?"
+    voiceLine: 23
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "HAHAHAHAHA! I\u2019m joking, pare"
-  - actorId: 0
-    message: "There\u2019s this birthday tonight and I think I have the perfect present"
+    voiceLine: 16
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 1
     message: "What\u2019s been going on pare? Other than bringing people around"
+    voiceLine: 21
+    characterSprite: {fileID: -964409970, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
+  - actorId: 0
+    message: "There\u2019s this birthday tonight and I think I have the perfect present"
+    voiceLine: 17
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "I\u2019ve been asking around about what they\u2019d like to get"
+    voiceLine: 23
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "I\u2019m feeling good about this!"
+    voiceLine: 27
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 1
     message: Nice pare!
+    voiceLine: 17
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: Anyways, show me how you serve taho
+    voiceLine: 19
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "Make\u2019em choose the size of the cup first, I like \u2018em big"
+    voiceLine: 37
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: After that, you make the taho itself!
+    voiceLine: 27
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: You gotta put the taho base first pare, then the syrup, and the tapioca
       last
+    voiceLine: 22
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "It\u2019s common sense pare. Different people like different things"
+    voiceLine: 16
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: Like me, I like it normal, the basic brown sugar taho
+    voiceLine: 37
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: "Some people won\u2019t say what they like though, you\u2019ll have
       to guess and hope for the best"
+    voiceLine: 22
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: They hint about what type of flavors they like though
+    voiceLine: 27
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: People who like sweeter flavors like either the strawberry flavor or
       ube flavor more
+    voiceLine: 26
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: When you do the flavors you gotta make sure to put the correct flavors
       for both the syrup and the tapioca when you do it
+    voiceLine: 23
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "You gotta be careful though, mess up too much and they\u2019ll leave
       you hanging dry pare"
+    voiceLine: 18
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: You got two tries to get it right
+    voiceLine: 27
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "But of course, I ain\u2019t leaving you pare"
+    voiceLine: 37
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: "At least for today\u2026"
+    voiceLine: 22
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   openingDialogueDay2:
   - actorId: 0
     message: Hoy pare!
+    voiceLine: 36
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 1
     message: Pare! How was the party?
+    voiceLine: 24
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: I think I did a good job yesterday with my present
+    voiceLine: 16
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: Little Angelito like the toy robot I got him
+    voiceLine: 17
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: I knew it would be a hit
+    voiceLine: 27
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: "When I was younger, I always wanted toys but my family couldn\u2019t
       afford it"
+    voiceLine: 18
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 1
     message: "I\u2019m sure you made his day"
+    voiceLine: 21
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 1
     message: You know what I like, pare
+    voiceLine: 17
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 1
     message: One big taho, not sweet
+    voiceLine: 22
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 1
-    message: "Cuz I\u2019m spicy"
-  - actorId: 1
-    message: HAHAHAHHAHA
+    message: "Cuz I\u2019m spicy HAHAHAHHAHA"
+    voiceLine: 37
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 2
     message: '(One big sized taho, not too sweet) '
+    voiceLine: 21
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   correctDialogueDay1:
   - actorId: 0
     message: Nice job!
+    voiceLine: 17
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: Thanks, pare! Good luck!
+    voiceLine: 16
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   correctDialogueDay2:
   - actorId: 0
     message: Thanks pare!
+    voiceLine: 17
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: See you around bro!
+    voiceLine: 16
+    characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   wrongOrderDialogue:
   - actorId: 0
     message: That ain't right, pare
+    voiceLine: 29
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: I don't like that flavor
+    voiceLine: 18
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   walkOutDialogue:
   - actorId: 0
     message: "I thought you knew me pare\u2026"
+    voiceLine: 28
+    characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
+  dialgoueTypes: 0

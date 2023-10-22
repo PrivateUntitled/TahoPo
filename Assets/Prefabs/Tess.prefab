@@ -161,67 +161,121 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
-  currentDay: 1
   textWriter: {fileID: 0}
   openingDialogueDay1:
   - actorId: 0
     message: Oh hi Marco! Finally started selling taho I see...
+    voiceLine: 6
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 1
     message: Hi Ate Tess! How are you doing today?
+    voiceLine: 20
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 0
     message: "Marco, I\u2019m so excited for tonight! "
+    voiceLine: 13
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 0
     message: I bought a cake and cleaned the house for tonight
+    voiceLine: 12
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 0
     message: Hopefully, everyone likes the cake I bought
+    voiceLine: 8
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 1
     message: "I\u2019m sure they will Ate, everyone likes free cake"
+    voiceLine: 21
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 0
     message: "You\u2019re right"
+    voiceLine: 14
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 0
     message: "You\u2019re so right, Marco"
+    voiceLine: 11
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 0
     message: "I\u2019ll get one small taho"
+    voiceLine: 12
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 0
     message: "I don\u2019t really like sweet things so please give me something not
       too sweet"
+    voiceLine: 8
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 1
     message: Got it Ate! Coming right up!
+    voiceLine: 21
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 2
     message: (One small size taho, not too sweet)
+    voiceLine: 26
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   openingDialogueDay2:
   - actorId: 0
     message: Marco!
+    voiceLine: 6
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 1
     message: Ate Tess! How did yesterday go?
+    voiceLine: 21
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 0
     message: It was great! Angelito had a great time!
+    voiceLine: 13
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 0
     message: And everybody loved the cake I bought
+    voiceLine: 12
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 1
     message: "Didn\u2019t I tell you Ate? Everybody loves free cake!"
+    voiceLine: 21
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 0
     message: "The icing on the top was Angelito\u2019s reaction to his gift"
+    voiceLine: 13
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 0
     message: He loved his bike, he kept riding it around yesterday
+    voiceLine: 13
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   - actorId: 0
     message: "Anyways, I\u2019ll get one small taho"
+    voiceLine: 8
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 0
     message: "Remember, I don\u2019t like it sweet!"
+    voiceLine: 14
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 1
     message: Noted Ate!
+    voiceLine: 21
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   - actorId: 2
     message: (One small size taho, not too sweet)
+    voiceLine: 21
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   correctDialogueDay1:
   - actorId: 0
     message: Perfect Marco! Good luck with the rest of your day!
+    voiceLine: 12
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   correctDialogueDay2:
   - actorId: 0
     message: I was craving this! Thanks Marco!
+    voiceLine: 13
+    characterSprite: {fileID: 1785245456, guid: 7f030b4190a03014c882523fbad8ffd2, type: 3}
   wrongOrderDialogue:
   - actorId: 0
     message: "Ay nako, Marco! I don\u2019t like sweet remember. I don't like this
       flavor\u2026"
+    voiceLine: 10
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
   walkOutDialogue:
   - actorId: 0
     message: "Uhhh\u2026 Maybe next time nalang, Marco"
+    voiceLine: 9
+    characterSprite: {fileID: 616742791, guid: 5ff09a12373449246a3b40b165bcea62, type: 3}
+  dialgoueTypes: 0
