@@ -65,11 +65,13 @@ public class CutsceneManager : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        Debug.Log("Button Pressed");
         StartCoroutine(GameManager.instance.LoadMainMenuScene2());
     }
 
     public void QuitGame()
     {
+        Debug.Log("Button Pressed");
 #if UNITY_STANDALONE
         Application.Quit();
 #endif
