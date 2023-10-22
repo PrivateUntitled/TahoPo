@@ -17,6 +17,7 @@ public class DialogActivator : MonoBehaviour
     [SerializeField] private GameObject dialogManagerPrefab;
     private GameObject dialogBox;
     [SerializeField] private TextWriter textWriter;
+    public TextWriter TextWriter { get{ return textWriter; } }
 
     [Header("Customer Dialogue Per Day")]
     [SerializeField] private Dialogue[] openingDialogueDay1;

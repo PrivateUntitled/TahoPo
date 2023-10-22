@@ -21,16 +21,25 @@ public class TextWriter : MonoBehaviour
     private Dialogue[] currentDialogue;
     [SerializeField] private Image textBoxBG;
 
+    private float timeCharacter;
+    public float TimeCharacter { get { return timeCharacter; } set { timeCharacter = value; } }
+    public float TimePerCharacter { get { return timePerCharacter; } }
+
+    private bool textIsDone;
+
+    public bool TextIsDone { get { return textIsDone; } }
 
     // Start is called before the first frame update
     void Start()
     {
+
+        timeCharacter = timePerCharacter;
         textBoxBG = GameObject.Find("BG").GetComponent<Image>();
 
         characterTextBox = GetComponentInChildren<TextMeshProUGUI>();
         characterTextBox.maxVisibleCharacters = 0;
 
-        StartCoroutine(typeText(currentDialogue[textID].message, timePerCharacter));
+        StartCoroutine(typeText(currentDialogue[textID].message));
 
         GameManager.instance.Player.GetComponent<Player>().isTalking = true;
         AudioManager.instance.PlaySFX(currentDialogue[textID].voiceLine);
@@ -59,7 +68,7 @@ public class TextWriter : MonoBehaviour
             GameManager.instance.Customer.GetComponent<SpriteRenderer>().sprite = currentDialogue[textID].characterSprite;
 
             textBoxBG.sprite = textBoxSprites[currentDialogue[textID].actorId];
-            StartCoroutine(typeText(currentDialogue[textID].message, timePerCharacter));
+            StartCoroutine(typeText(currentDialogue[textID].message));
         }
 
         else
@@ -89,14 +98,17 @@ public class TextWriter : MonoBehaviour
         }
     }
 
-    private IEnumerator typeText(string textToDisplay, float timePerCharacter)
+    private IEnumerator typeText(string textToDisplay)
     {
+        textIsDone = false;
         characterTextBox.text = textToDisplay;
 
         for (int i = 0; i < characterTextBox.text.Length; i++)
         {
             characterTextBox.maxVisibleCharacters++;
-            yield return new WaitForSeconds(timePerCharacter);
+            yield return new WaitForSeconds(timeCharacter);
         }
+
+        textIsDone = true;
     }
 }

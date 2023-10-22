@@ -25,52 +25,69 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isTalking || !collideWithTahoComponent)
-            return;
-
-        if (Input.GetMouseButtonDown(0))
+        if (isTalking)
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, -Vector2.up);
-
-            // If collider hits something
-            if (hit.collider == null)
-                return;
-
-            // If collider hits taho component
-            if (hit.collider.GetComponent<TahoComponents>() == null)
-                return;
-
-            TahoComponents tahoComponent = hit.collider.GetComponent<TahoComponents>();
-
-            if (currentCustomerOrder == null || tries == 0)
-                return;
-
-            // Check if order is correct
-            if (currentCustomerOrder.ComponentMatches(tahoComponent.Component))
+            if (Input.GetMouseButtonDown(0))
             {
-                tahoComponent.AddComponentToOrder();
-                tahoComponent.SetOrderSprite();
-                currentCustomerOrder.NextComponent();
-            }
-            else
-            {
-                if(!infiniteTries)
-                    tries--;
-
-                AudioManager.instance.PlaySFX(sfxenum.sfx_guessWrong);
-
-                Debug.Log("Incorrect Order, Tries Left: " + tries);
-                GameManager.instance.Customer.GetComponent<DialogActivator>().LeaveDialogue(tries);
-
-                if (tries <= 0)
+                TextWriter textWriter = GameManager.instance.Customer.GetComponent<DialogActivator>().TextWriter;
+                if (textWriter.TextIsDone)
                 {
-                    GameManager.instance.CallNextCustomer();
+                    textWriter.TimeCharacter = textWriter.TimePerCharacter;
+                    textWriter.ProgressDialogue();
+                }
+                else
+                    textWriter.TimeCharacter = 0;
+            }
+        }
+        else
+        {
+            if (!collideWithTahoComponent)
+                return;
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+                RaycastHit2D hit = Physics2D.Raycast(mousePos2D, -Vector2.up);
+
+                // If collider hits something
+                if (hit.collider == null)
+                    return;
+
+                // If collider hits taho component
+                if (hit.collider.GetComponent<TahoComponents>() == null)
+                    return;
+
+                TahoComponents tahoComponent = hit.collider.GetComponent<TahoComponents>();
+
+                if (currentCustomerOrder == null || tries == 0)
+                    return;
+
+                // Check if order is correct
+                if (currentCustomerOrder.ComponentMatches(tahoComponent.Component))
+                {
+                    tahoComponent.AddComponentToOrder();
+                    tahoComponent.SetOrderSprite();
+                    currentCustomerOrder.NextComponent();
                 }
                 else
                 {
-                    GameManager.instance.Customer.GetComponent<CustomerOrder>().SetPlayerSprite();
+                    if (!infiniteTries)
+                        tries--;
+
+                    AudioManager.instance.PlaySFX(sfxenum.sfx_guessWrong);
+
+                    Debug.Log("Incorrect Order, Tries Left: " + tries);
+                    GameManager.instance.Customer.GetComponent<DialogActivator>().LeaveDialogue(tries);
+
+                    if (tries <= 0)
+                    {
+                        GameManager.instance.CallNextCustomer();
+                    }
+                    else
+                    {
+                        GameManager.instance.Customer.GetComponent<CustomerOrder>().SetPlayerSprite();
+                    }
                 }
             }
         }
