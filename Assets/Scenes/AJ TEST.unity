@@ -169,8 +169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Syrup Ube
-  componentSprite: {fileID: 0}
   component: 5
+  componentSprite:
+  - {fileID: 0}
 --- !u!60 &243597257
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -275,8 +276,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Sago Normal
-  componentSprite: {fileID: 0}
   component: 6
+  componentSprite:
+  - {fileID: 0}
 --- !u!60 &317929471
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -418,7 +420,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &355559350
 MonoBehaviour:
@@ -433,8 +435,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Medium Cup
-  componentSprite: {fileID: 0}
   component: 1
+  componentSprite: {fileID: 0}
 --- !u!1 &475411745
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +468,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &475411747
 MonoBehaviour:
@@ -633,8 +635,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Syrup Normal
-  componentSprite: {fileID: 0}
   component: 3
+  componentSprite:
+  - {fileID: 0}
 --- !u!60 &677036871
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -774,7 +777,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &869469320
 MonoBehaviour:
@@ -789,8 +792,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Small Cup
-  componentSprite: {fileID: 0}
   component: 0
+  componentSprite: {fileID: 0}
 --- !u!1 &963609411
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,8 +840,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Sago Strawberry
-  componentSprite: {fileID: 0}
   component: 7
+  componentSprite:
+  - {fileID: 0}
 --- !u!60 &963609417
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -953,7 +957,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116885125
 GameObject:
@@ -1001,8 +1005,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Syrup Strawberry
-  componentSprite: {fileID: 0}
   component: 4
+  componentSprite:
+  - {fileID: 0}
 --- !u!60 &1116885131
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1064,8 +1069,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Sago Ube
-  componentSprite: {fileID: 0}
   component: 8
+  componentSprite:
+  - {fileID: 0}
 --- !u!4 &1462349452
 Transform:
   m_ObjectHideFlags: 0
@@ -1200,65 +1206,8 @@ Transform:
   - {fileID: 1462349452}
   - {fileID: 2014027027}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1725081425
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8332982077916803892, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_Name
-      value: Zyrus
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.9125547
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.56444854
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332982077916803894, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b1a035fcd74fbe142a6495cbd7e0ba81, type: 3}
 --- !u!1 &2014027023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,8 +1239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Taho
-  componentSprite: {fileID: 0}
   component: 2
+  componentSprite:
+  - {fileID: 0}
 --- !u!4 &2014027027
 Transform:
   m_ObjectHideFlags: 0

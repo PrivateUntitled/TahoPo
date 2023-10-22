@@ -11,7 +11,7 @@ public class TextWriter : MonoBehaviour
     [SerializeField] private Sprite[] textBoxSprites;
     private TextMeshProUGUI characterTextBox;
     private Dialogue[] currentDialogue;
-    private Image textBoxBG;
+    [SerializeField] private Image textBoxBG;
 
     // Start is called before the first frame update
     void Start()

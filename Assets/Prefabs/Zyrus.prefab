@@ -161,20 +161,101 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
+  currentDay: 1
   textWriter: {fileID: 0}
   openingDialogueDay1:
   - actorId: 0
-    message: Day 1
+    message: Eyyy Pare! You finally started selling taho
   - actorId: 1
-    message: ' taho 1'
-  - actorId: 2
-    message: thot 1
+    message: Zyrus, pare! Nice to see you!
+  - actorId: 0
+    message: "Can I get it for free since I\u2019m your first customer?"
+  - actorId: 0
+    message: "HAHAHAHAHA! I\u2019m joking, pare"
+  - actorId: 0
+    message: "There\u2019s this birthday tonight and I think I have the perfect present"
+  - actorId: 1
+    message: "What\u2019s been going on pare? Other than bringing people around"
+  - actorId: 0
+    message: "I\u2019ve been asking around about what they\u2019d like to get"
+  - actorId: 0
+    message: "I\u2019m feeling good about this!"
+  - actorId: 1
+    message: Nice pare!
+  - actorId: 0
+    message: Anyways, show me how you serve taho
+  - actorId: 0
+    message: "Make\u2019em choose the size of the cup first, I like \u2018em big"
+  - actorId: 0
+    message: After that, you make the taho itself!
+  - actorId: 0
+    message: You gotta put the taho base first pare, then the syrup, and the tapioca
+      last
+  - actorId: 0
+    message: "It\u2019s common sense pare. Different people like different things"
+  - actorId: 0
+    message: Like me, I like it normal, the basic brown sugar taho
+  - actorId: 0
+    message: "Some people won\u2019t say what they like though, you\u2019ll have
+      to guess and hope for the best"
+  - actorId: 0
+    message: They hint about what type of flavors they like though
+  - actorId: 0
+    message: People who like sweeter flavors like either the strawberry flavor or
+      ube flavor more
+  - actorId: 0
+    message: When you do the flavors you gotta make sure to put the correct flavors
+      for both the syrup and the tapioca when you do it
+  - actorId: 0
+    message: "You gotta be careful though, mess up too much and they\u2019ll leave
+      you hanging dry pare"
+  - actorId: 0
+    message: You got two tries to get it right
+  - actorId: 0
+    message: "But of course, I ain\u2019t leaving you pare"
+  - actorId: 0
+    message: "At least for today\u2026"
   openingDialogueDay2:
   - actorId: 0
-    message: day 2
-  endingDialogueDay1:
+    message: Hoy pare!
+  - actorId: 1
+    message: Pare! How was the party?
   - actorId: 0
-    message: bye 1
-  endingDialogueDay2:
+    message: I think I did a good job yesterday with my present
   - actorId: 0
-    message: bye 2
+    message: Little Angelito like the toy robot I got him
+  - actorId: 0
+    message: I knew it would be a hit
+  - actorId: 0
+    message: "When I was younger, I always wanted toys but my family couldn\u2019t
+      afford it"
+  - actorId: 1
+    message: "I\u2019m sure you made his day"
+  - actorId: 1
+    message: You know what I like, pare
+  - actorId: 1
+    message: One big taho, not sweet
+  - actorId: 1
+    message: "Cuz I\u2019m spicy"
+  - actorId: 1
+    message: HAHAHAHHAHA
+  - actorId: 2
+    message: '(One big sized taho, not too sweet) '
+  correctDialogueDay1:
+  - actorId: 0
+    message: Nice job!
+  - actorId: 0
+    message: Thanks, pare! Good luck!
+  correctDialogueDay2:
+  - actorId: 0
+    message: Thanks pare!
+  - actorId: 0
+    message: See you around bro!
+  wrongOrderDialogue:
+  - actorId: 0
+    message: That ain't right, pare
+  - actorId: 0
+    message: I don't like that flavor
+  walkOutDialogue:
+  - actorId: 0
+    message: "I thought you knew me pare\u2026"

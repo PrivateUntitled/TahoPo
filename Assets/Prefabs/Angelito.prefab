@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616907343448329717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.87, y: -0.55, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -2.87, y: -1.53, z: 0}
+  m_LocalScale: {x: 2.6, y: 2.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4683908206803053703}
@@ -130,11 +130,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
+  currentDay: 1
   textWriter: {fileID: 0}
-  openingDialogueDay1: []
-  openingDialogueDay2: []
-  endingDialogueDay1: []
-  endingDialogueDay2: []
+  openingDialogueDay1:
+  - actorId: 0
+    message: 'Kuya Marco! '
+  - actorId: 1
+    message: Angelito! My boy! How is everything?
+  - actorId: 0
+    message: The adults are acting weird.. They keep asking me about what I want
+  - actorId: 0
+    message: "I\u2019d love to get something that I could use to help Mom out\u2026 "
+  - actorId: 0
+    message: Maybe if I got something I could use to go around I can help her with
+      her chores!
+  - actorId: 1
+    message: "You\u2019re a good kid, Angelito. Tess would be proud if she knew what
+      you were thinking!"
+  - actorId: 0
+    message: But I gotta get my hands on some dessert right now!
+  - actorId: 0
+    message: One small taho please!
+  - actorId: 0
+    message: And please make it sweet!
+  - actorId: 1
+    message: "Coming up! I\u2019ll serve it to you Kuya Marco style!"
+  - actorId: 2
+    message: (One small taho, a sweet flavor)
+  openingDialogueDay2:
+  - actorId: 0
+    message: Kuya Marco! Kuya Marco! Guess what!
+  - actorId: 1
+    message: "Angelito! What\u2019s up?"
+  - actorId: 0
+    message: I had the best birthday yesterday
+  - actorId: 0
+    message: I got so many presents! A bike, a toy robot, and money!
+  - actorId: 1
+    message: "Ey! That\u2019s great!"
+  - actorId: 1
+    message: Happy Belated Birthday, little man!
+  - actorId: 0
+    message: Yeah! I got to see my dad too!
+  - actorId: 0
+    message: "But he left halfway\u2026 work called him"
+  - actorId: 0
+    message: "He barely comes home because he\u2019s so busy"
+  - actorId: 0
+    message: "I get that he does it so that our neighborhood becomes better\u2026
+      but I wish he would come home more"
+  - actorId: 0
+    message: Yeah
+  - actorId: 0
+    message: Well, I want dessert now so...
+  - actorId: 0
+    message: One small taho please, kuya
+  - actorId: 0
+    message: I want it sweet!
+  - actorId: 2
+    message: (One small taho, a sweet flavor)
+  correctDialogueDay1:
+  - actorId: 0
+    message: I love this!
+  - actorId: 0
+    message: Thank you, Kuya Marco!
+  correctDialogueDay2:
+  - actorId: 0
+    message: My favorite!
+  - actorId: 0
+    message: "You\u2019re the best!"
+  - actorId: 0
+    message: Thank you, Kuya Marco!
+  wrongOrderDialogue:
+  - actorId: 0
+    message: "No, Kuya Marco! I don\u2019t like that flavor!"
+  walkOutDialogue:
+  - actorId: 0
+    message: Oh no! I have to hurry home, mom is waiting for me
 --- !u!1 &6563156380999696931
 GameObject:
   m_ObjectHideFlags: 0

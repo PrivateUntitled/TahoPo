@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Dialogue 
@@ -13,21 +14,25 @@ public class DialogActivator : MonoBehaviour
 {
     [SerializeField] private GameObject dialogManagerPrefab;
     private GameObject dialogBox;
-    private int currentDay = 2;
+    [SerializeField] private int currentDay = 1;
     [SerializeField] private TextWriter textWriter;
 
-    [Header("Customer Dialogue")]
+    [Header("Customer Dialogue Per Day")]
     [SerializeField] private Dialogue[] openingDialogueDay1;
     [SerializeField] private Dialogue[] openingDialogueDay2;
-    [SerializeField] private Dialogue[] endingDialogueDay1;
-    [SerializeField] private Dialogue[] endingDialogueDay2;
+    [SerializeField] private Dialogue[] correctDialogueDay1;
+    [SerializeField] private Dialogue[] correctDialogueDay2;
+
+    [Header("Common Dialogue")]
+    [SerializeField] private Dialogue[] wrongOrderDialogue;
+    [SerializeField] private Dialogue[] walkOutDialogue;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        dialogBox = Instantiate(dialogManagerPrefab, dialogManagerPrefab.transform.position, Quaternion.identity);
-        textWriter = dialogBox.GetComponent<TextWriter>();
-        OpeningDialogue(currentDay);
+        CreateTextBox();
+        BeforeServeDialogue(currentDay);
     }
 
     // Update is called once per frame
@@ -36,17 +41,30 @@ public class DialogActivator : MonoBehaviour
         
     }
 
-    void OpeningDialogue(int dayCount)
-    {
-        if (currentDay == 1) textWriter.SetDialogue(openingDialogueDay1);
-        else if (currentDay == 2) textWriter.SetDialogue(openingDialogueDay2);
-    }
-
-    public void EndingDialogue(int dayCount)
+    void CreateTextBox()
     {
         dialogBox = Instantiate(dialogManagerPrefab, dialogManagerPrefab.transform.position, Quaternion.identity);
         textWriter = dialogBox.GetComponent<TextWriter>();
-        if (currentDay == 1) textWriter.SetDialogue(endingDialogueDay1);
-        else if (currentDay == 2) textWriter.SetDialogue(endingDialogueDay2);
+        //SceneManager.MoveGameObjectToScene(dialogBox, SceneManager.GetSceneByName("Main Game"));
+    }
+
+    void BeforeServeDialogue(int dayCount)
+    {
+        if (dayCount == 1) textWriter.SetDialogue(openingDialogueDay1);
+        else if (dayCount == 2) textWriter.SetDialogue(openingDialogueDay2);
+    }
+
+    public void AfterServeDialogue(int dayCount)
+    {
+        CreateTextBox();
+        if (dayCount == 1) textWriter.SetDialogue(correctDialogueDay1);
+        else if (dayCount == 2) textWriter.SetDialogue(correctDialogueDay2);
+    }
+
+    public void LeaveDialogue(int tryCount)
+    {
+        CreateTextBox();
+        if (tryCount > 0) textWriter.SetDialogue(wrongOrderDialogue);
+        else textWriter.SetDialogue(walkOutDialogue);
     }
 }

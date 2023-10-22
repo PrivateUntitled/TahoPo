@@ -83,26 +83,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c40268d6cad96649a470a2f0a27f685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueDay1:
-  - actorId: 2
-    message: day 1
-  - actorId: 1
-    message: taho 1
-  - actorId: 0
-    message: thot 1
-  dialogueDay2:
-  - actorId: 2
-    message: day 2
-  - actorId: 1
-    message: taho 2
-  - actorId: 0
-    message: thot 2
   timePerCharacter: 0.05
   textID: 0
   textBoxSprites:
-  - {fileID: 21300000, guid: da72d5bbc6280404797ab59694eb86d0, type: 3}
-  - {fileID: 21300000, guid: fddf2b21ca2c1d543a69d7c4603c9d82, type: 3}
-  - {fileID: 21300000, guid: 750d40ff0db647f45afd7b72ca1c9a93, type: 3}
+  - {fileID: 21300000, guid: 9bceb246fb07bc349920c6529b4f96d6, type: 3}
+  - {fileID: 21300000, guid: 38873d5dbbc07b142b0eaa7f5d7d8e10, type: 3}
+  - {fileID: 21300000, guid: e21a5ba21a46e0c46bf8a8d748465235, type: 3}
+  textBoxBG: {fileID: 0}
 --- !u!1 &6628352404381358249
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: da72d5bbc6280404797ab59694eb86d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 38873d5dbbc07b142b0eaa7f5d7d8e10, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -489,8 +476,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4279649649
+  m_fontColor: {r: 0.44313726, g: 0.27058825, b: 0.08627451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -58,8 +58,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8332982077916803892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.87, y: -0.55, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -2.87, y: -0.47, z: 0}
+  m_LocalScale: {x: 3.2, y: 3.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2653831944777781830}
@@ -161,8 +161,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogManagerPrefab: {fileID: 6628352403848520624, guid: 11c1abaa7599d7f4bbbbe6a2e2e203e9, type: 3}
+  currentDay: 1
   textWriter: {fileID: 0}
-  openingDialogueDay1: []
-  openingDialogueDay2: []
-  endingDialogueDay1: []
-  endingDialogueDay2: []
+  openingDialogueDay1:
+  - actorId: 0
+    message: Ah Marco!
+  - actorId: 1
+    message: Boss! Kuya Antone! How are you doing?
+  - actorId: 0
+    message: '*sigh* What should I do?'
+  - actorId: 0
+    message: "I forgot it was their birthday today\u2026"
+  - actorId: 0
+    message: "I don\u2019t have time to buy a present"
+  - actorId: 0
+    message: Do you think money will do?
+  - actorId: 1
+    message: I think anything you want to give them is fine, Kuya
+  - actorId: 0
+    message: "I don\u2019t know them that well either since I\u2019m away all the
+      time"
+  - actorId: 1
+    message: "Whatever you get, I\u2019m sure they\u2019ll be grateful!"
+  - actorId: 0
+    message: "Well, there\u2019s nothing else I can do"
+  - actorId: 0
+    message: One Big taho please
+  - actorId: 0
+    message: I like it sweet!
+  - actorId: 2
+    message: (One big sized taho, a sweet flavor)
+  openingDialogueDay2:
+  - actorId: 1
+    message: Ah Kuya Antone! Up early I see...
+  - actorId: 1
+    message: How are you doing?
+  - actorId: 0
+    message: I screwed up Marco
+  - actorId: 0
+    message: I feel bad for missing the party
+  - actorId: 1
+    message: Oh, why did you miss the party?
+  - actorId: 0
+    message: Work called in the middle, so I had to leave
+  - actorId: 0
+    message: "I hope Angelito understands\u2026"
+  - actorId: 0
+    message: "I didn\u2019t mean to go"
+  - actorId: 1
+    message: "I\u2019m sure he did understand... Don\u2019t worry about it, Kuya"
+  - actorId: 0
+    message: "Anyways, I\u2019ll get one big taho"
+  - actorId: 0
+    message: You know I like it sweet
+  - actorId: 2
+    message: (One big sized taho, a sweet flavor)
+  correctDialogueDay1:
+  - actorId: 0
+    message: Thanks, I got to get back to work
+  correctDialogueDay2:
+  - actorId: 0
+    message: Thanks, I got to get back to work
+  wrongOrderDialogue:
+  - actorId: 0
+    message: "Marco, I don\u2019t like that flavor"
+  walkOutDialogue:
+  - actorId: 0
+    message: "Marco, I expected more\u2026 I expected better\u2026"
