@@ -79,15 +79,6 @@ public class Player : MonoBehaviour
 
                     Debug.Log("Incorrect Order, Tries Left: " + tries);
                     GameManager.instance.Customer.GetComponent<DialogActivator>().LeaveDialogue(tries);
-
-                    if (tries <= 0)
-                    {
-                        GameManager.instance.CallNextCustomer();
-                    }
-                    else
-                    {
-                        GameManager.instance.Customer.GetComponent<CustomerOrder>().SetPlayerSprite();
-                    }
                 }
             }
         }

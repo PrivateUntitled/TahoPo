@@ -81,11 +81,11 @@ public class TextWriter : MonoBehaviour
                     break;
 
                 case DialgoueTypes.LEAVE_BAD:
-
+                    GameManager.instance.CallNextCustomer();
                     break;
 
                 case DialgoueTypes.WRONG:
-
+                    GameManager.instance.Customer.GetComponent<CustomerOrder>().SetPlayerSprite();
                     break;
 
                 case DialgoueTypes.LEAVE:
