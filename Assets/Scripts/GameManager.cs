@@ -57,6 +57,7 @@ public class GameManager : Singleton<GameManager>
     {
         AudioManager.instance.StopBackgroundMusicSound();
         AudioManager.instance.PlayBackgroundMusic(bgmenum.GJP23_SomethingToLookForwardTo_final);
+        AudioManager.instance.PlayRandomSFX(new List<sfxenum> { sfxenum.Male1_Taho1, sfxenum.Male1_Taho2 });
 
         customerCount = 0;
         customerToServe = TotalDays[currentDay].Customers.Count;
@@ -137,8 +138,6 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitForSeconds(2);
 
         int tahoScream = Random.Range(0, 2);
-
-        //AudioManager.instance.PlayRandomSFX(new List<sfxenum> { sfxenum.Male1_Taho1, sfxenum.Male1_Taho2 });
 
         // Start Tutorial
         if (currentDay == 0 && customerCount == 0)

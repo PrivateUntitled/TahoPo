@@ -169,15 +169,15 @@ MonoBehaviour:
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 1
     message: Zyrus, pare! Nice to see you!
-    voiceLine: 20
+    voiceLine: 21
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: "Can I get it for free since I\u2019m your first customer?"
-    voiceLine: 23
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "HAHAHAHAHA! I\u2019m joking, pare"
-    voiceLine: 16
+    voiceLine: 22
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 1
     message: "What\u2019s been going on pare? Other than bringing people around"
@@ -185,11 +185,11 @@ MonoBehaviour:
     characterSprite: {fileID: -964409970, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "There\u2019s this birthday tonight and I think I have the perfect present"
-    voiceLine: 17
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "I\u2019ve been asking around about what they\u2019d like to get"
-    voiceLine: 23
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "I\u2019m feeling good about this!"
@@ -197,19 +197,19 @@ MonoBehaviour:
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 1
     message: Nice pare!
-    voiceLine: 17
+    voiceLine: 21
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: Anyways, show me how you serve taho
-    voiceLine: 19
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "Make\u2019em choose the size of the cup first, I like \u2018em big"
-    voiceLine: 37
+    voiceLine: 22
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: After that, you make the taho itself!
-    voiceLine: 27
+    voiceLine: 22
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: You gotta put the taho base first pare, then the syrup, and the tapioca
@@ -218,7 +218,7 @@ MonoBehaviour:
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "It\u2019s common sense pare. Different people like different things"
-    voiceLine: 16
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: Like me, I like it normal, the basic brown sugar taho
@@ -231,26 +231,26 @@ MonoBehaviour:
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: They hint about what type of flavors they like though
-    voiceLine: 27
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: People who like sweeter flavors like either the strawberry flavor or
       ube flavor more
-    voiceLine: 26
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: When you do the flavors you gotta make sure to put the correct flavors
       for both the syrup and the tapioca when you do it
-    voiceLine: 23
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "You gotta be careful though, mess up too much and they\u2019ll leave
       you hanging dry pare"
-    voiceLine: 18
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: You got two tries to get it right
-    voiceLine: 27
+    voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: "But of course, I ain\u2019t leaving you pare"
@@ -271,11 +271,11 @@ MonoBehaviour:
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: I think I did a good job yesterday with my present
-    voiceLine: 16
+    voiceLine: 22
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: Little Angelito like the toy robot I got him
-    voiceLine: 17
+    voiceLine: 22
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
   - actorId: 0
     message: I knew it would be a hit
@@ -294,11 +294,11 @@ MonoBehaviour:
     message: You know what I like, pare
     voiceLine: 17
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
-  - actorId: 1
+  - actorId: 0
     message: One big taho, not sweet
     voiceLine: 22
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
-  - actorId: 1
+  - actorId: 0
     message: "Cuz I\u2019m spicy HAHAHAHHAHA"
     voiceLine: 37
     characterSprite: {fileID: -897105064, guid: 1c2a4fa78c203264ab53480ff4e7fa1b, type: 3}
@@ -331,11 +331,11 @@ MonoBehaviour:
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   - actorId: 0
     message: I don't like that flavor
-    voiceLine: 18
+    voiceLine: 28
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   walkOutDialogue:
   - actorId: 0
     message: "I thought you knew me pare\u2026"
-    voiceLine: 28
+    voiceLine: 18
     characterSprite: {fileID: -1753533967, guid: 2b1bf4b55cd060f44b176ea5c24eeda1, type: 3}
   dialgoueTypes: 0
